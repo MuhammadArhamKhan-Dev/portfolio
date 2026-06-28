@@ -44,7 +44,7 @@ const Contact = () => {
                 <div className={styles.info}>
                     <div className={styles.infoItem}>
                         <MdEmail className={styles.icon} />
-                        <a href="karham937@gmail.com">karham937@gmail.com</a>
+                        <a href="mailto:karham937@gmail.com">karham937@gmail.com</a>
                     </div>
                     <div className={styles.infoItem}>
                         <FaLinkedin className={styles.icon} />
