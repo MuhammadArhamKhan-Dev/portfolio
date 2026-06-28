@@ -1,0 +1,87 @@
+.contact{
+    padding: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.contact .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.contact .grid .info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contact .grid .infoItem{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact .grid .infoItem a{
+    text-decoration: none;
+    color: var(--text-muted);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input, .textarea{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem;
+    border: 2px solid var(--accent-dim);
+    border-radius: 6px;
+    font-family: var(--font-main);
+    color: var(--text-primary);
+}
+
+.input:focus, .textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.form .btn{
+    width: 50%;
+    margin: 0 auto;
+    font: var(--font-main);
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0a0a0a;
+    background-color: var(--accent);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.form .btn:hover{
+    background-color: var(--accent-dim);
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--accent);
+    flex-shrink: 0;    
+}
+
+@media (max-width: 768px) {
+        .contact .grid{
+            grid-template-columns: 1fr;
+        }
+        .contact{
+            padding: 6rem 3rem;
+        }
+}
